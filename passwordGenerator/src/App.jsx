@@ -9,7 +9,7 @@ function App() {
   const [charAllowed , setCharAllowed] = useState(false);
   const [password, setPassword] = useState("")
 
-  //^----------------------------------useRef Hook---------------------------------------
+  //*----------------------------------useRef Hook---------------------------------------
   const passRef = useRef(null)
   
   //^----------------------------------useCallback Hook---------------------------------------
@@ -83,7 +83,7 @@ function App() {
         </div>
         <div className="flex items-center gap-x-1">
           <input type="checkbox" 
-          defaultChecked={numberAllowed} 
+          defaultChecked={charAllowed} 
           id="charInput"
           onChange={()=>{
               setCharAllowed((prev) =>!prev)
@@ -93,7 +93,7 @@ function App() {
         </div>
         <button
       onClick={passwordGenerator}
-      className='outline-none rounded  bg-blue-700 text-white px-3 py-0.5 shrink-0 '>Re-Generate</button>
+      className='outline-none rounded  b  g-blue-700 text-white px-3 py-0.5 shrink-0 '>Re-Generate</button>
       </div>
     </div>
     </>

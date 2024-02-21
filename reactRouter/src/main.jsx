@@ -22,7 +22,7 @@ import {Github,Layout,Home,About,User,Contact, githubInfoloader} from './compone
 //   }
 // ])
 
-//^-------------------------Either upr vaala or niche vaala kuch bhi user kr skte hai routing ke liye------------------------------------
+//@-------------------------Either upr vaala or niche vaala kuch bhi user kr skte hai routing ke liye------------------------------------
 
 const router = createBrowserRouter(
   createRoutesFromElements(
