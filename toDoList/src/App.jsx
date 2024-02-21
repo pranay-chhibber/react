@@ -24,9 +24,7 @@ function App() {
       //   }
       // })
   }
-  const deleteTodo= (id) =>{
-      setTodos( (prev) => prev.filter((prevtodo)=> prevtodo.id !== id ) )
-  }
+  
   const toggleComplete= (id) =>{
       setTodos( (prev)=> prev.map((prevTodo) => prevTodo.id === id ? {...prevTodo, completed:!prevTodo.completed } : prevTodo ) )
   }
@@ -39,6 +37,9 @@ function App() {
       
     }
   }, [])
+  const deleteTodo= (id) =>{
+    setTodos( (prev) => prev.filter((prevtodo)=> prevtodo.id !== id ) )
+}
 
   useEffect(() => {
   localStorage.setItem("todos" , JSON.stringify(todos) )
